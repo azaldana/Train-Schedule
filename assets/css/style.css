@@ -1,0 +1,42 @@
+.container {
+    margin: 0 auto;
+    width: 90%;
+}
+
+.display-4 {
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.lead {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.card {
+    margin: 0 auto;
+    margin-bottom: 25px;
+    
+}
+
+form {
+    width: 100%;
+    padding: 20px;
+}
+
+.card-header {
+    margin: 0 auto;
+    width: 100%;
+    background-color: rgb(73, 180, 207);
+}
+
+#form {
+    padding: 20px;
+    font-weight: bold;
+}
+
+p {
+    color: black;
+}

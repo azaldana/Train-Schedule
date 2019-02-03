@@ -8,6 +8,9 @@ var config = {
   };
   firebase.initializeApp(config);
 
+  $(document).ready(function(){
+
+
   var database = firebase.database();
 
   var trainName = "";
@@ -50,15 +53,6 @@ $("#add-train").on("click", function(event) {
     console.log("this is the difference", difference);
     console.log("minutes away", minutesAway);
 
-    // $(".jumbotron").append('<p>' + nextArrival + '</p>');
-    
-    var $row = $("<tr>");
-    $row.append('<td>' + trainName + '</td>');
-    $row.append('<td>' + destination + '</td>');
-    $row.append('<td>' + frequency + '</td>');
-    $row.append('<td>' + nextArrival + '</td>');
-    $row.append('<td>' + minutesAway + '</td>');
-    $('tbody').append($row);
 
     $("#train-name").val('');
     $("#destination").val('');
@@ -78,6 +72,14 @@ $("#add-train").on("click", function(event) {
 
 database.ref().on("child_added", function(snap){
     var save = snap.val();
+
+    var $row = $("<tr>");
+    $row.append('<td>' + trainName + '</td>');
+    $row.append('<td>' + destination + '</td>');
+    $row.append('<td>' + frequency + '</td>');
+    $row.append('<td>' + nextArrival + '</td>');
+    $row.append('<td>' + minutesAway + '</td>');
+    $('tbody').append($row);
     
 
     console.log(snap.key, snap.val());
@@ -88,4 +90,4 @@ database.ref().on("child_added", function(snap){
     console.log(save.frequency);
 })
 
-
+  })

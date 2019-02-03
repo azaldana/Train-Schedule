@@ -1,6 +1,10 @@
+body {
+    background: url("assets/images/train_01.jpg");
+}
+
 .container {
     margin: 0 auto;
-    width: 90%;
+    width: 100%;
 }
 
 .display-4 {
@@ -24,6 +28,7 @@
 form {
     width: 100%;
     padding: 20px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .card-header {
@@ -33,10 +38,33 @@ form {
 }
 
 #form {
-    padding: 20px;
+    /* padding: 20px; */
     font-weight: bold;
 }
 
 p {
     color: black;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.title {
+    font-family: 'Montserrat', sans-serif;
+}
+
+th {
+    font-family: 'Montserrat', sans-serif;
+}
+
+tbody {
+    font-family: 'Montserrat', sans-serif;
+}
+
+#clock {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    text-align: center;
+    margin-bottom: 2px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    float: right;
 }

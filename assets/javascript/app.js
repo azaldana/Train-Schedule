@@ -49,6 +49,8 @@ $("#add-train").on("click", function(event) {
     var minutesAway = Number(frequency) - minutesFromLastTrain;
     currentTime.add(minutesAway, "minutes");
     var nextArrival = currentTime.format("hh:mm");
+
+   
     
     console.log("this is the difference", difference);
     console.log("minutes away", minutesAway);
@@ -89,5 +91,7 @@ database.ref().on("child_added", function(snap){
     console.log(save.firstTrain);
     console.log(save.frequency);
 })
+
+
 
   })

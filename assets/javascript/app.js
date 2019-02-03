@@ -74,11 +74,11 @@ database.ref().on("child_added", function(snap){
     var save = snap.val();
 
     var $row = $("<tr>");
-    $row.append('<td>' + trainName + '</td>');
-    $row.append('<td>' + destination + '</td>');
-    $row.append('<td>' + frequency + '</td>');
-    $row.append('<td>' + nextArrival + '</td>');
-    $row.append('<td>' + minutesAway + '</td>');
+    $row.append('<td>' + save.trainName + '</td>');
+    $row.append('<td>' + save.destination + '</td>');
+    $row.append('<td>' + save.frequency + '</td>');
+    $row.append('<td>' + save.nextArrival + '</td>');
+    $row.append('<td>' + save.minutesAway + '</td>');
     $('tbody').append($row);
     
 

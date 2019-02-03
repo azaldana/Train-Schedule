@@ -30,7 +30,6 @@ $(document).ready(function(){
 });
 
   
-
 $("#add-train").on("click", function(event) {
     // prevent page from refreshing when form tries to submit itself
     event.preventDefault();
